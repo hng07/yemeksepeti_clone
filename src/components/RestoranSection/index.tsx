@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet, ScrollView, Image } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 
 function RestoranSection() {
     return (

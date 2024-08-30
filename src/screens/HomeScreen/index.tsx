@@ -9,6 +9,7 @@ import Octicons from '@expo/vector-icons/Octicons';
 import KitchensSection from '../../components/KitchensSection';
 import BrandsSection from '../../components/BrandsSection';
 import CampaignsSection from '../../components/CampaignsSection';
+import RestoranSection from '../../components/RestoranSection'
 
 const GET_DATA = gql`
   query {
@@ -83,6 +84,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
         <CampaignsSection />
         <KitchensSection />
         <BrandsSection />
+        <RestoranSection/>
         {data?.allRestaurants.map((restaurant) => (
           <TouchableOpacity
             key={restaurant.id}
